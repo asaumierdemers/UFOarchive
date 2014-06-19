@@ -1,3 +1,5 @@
+# DrawBot script that generate a "flip book" animation from UFOs
+
 saveMovie = True
 
 folders = [
