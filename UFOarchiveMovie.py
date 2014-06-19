@@ -13,6 +13,7 @@ w, h = 500, 600 # width, height
 x, y = 250, 150 # xpos, ypos
 s = 0.5 # scale, e.g. 0.5 * 1000 UPM = 500 pt
 
+letters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
 
 def drawFrame(font, glyph):
     newPage(w, h)
@@ -27,7 +28,6 @@ def drawFrame(font, glyph):
 
 from fontTools.pens.cocoaPen import CocoaPen
 from robofab.world import OpenFont
-import string
 import os
 
 paths = []
@@ -44,8 +44,6 @@ for path in paths:
     
 skipCount = 0
 frameCount = 0
-
-letters = string.letters
 
 for letter in letters:
     
